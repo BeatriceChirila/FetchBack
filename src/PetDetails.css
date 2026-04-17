@@ -1,0 +1,203 @@
+/* --- PET DETAILS SCREEN --- */
+.details-page-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.details-card {
+  background-color: white;
+  border: 1px solid #e0e8e3;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  margin-top: 20px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.details-image-container {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Keeps it perfectly square */
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.details-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.no-photo-large {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f7f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.info-section {
+  margin-bottom: 30px;
+}
+
+.info-section h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f0f4f1;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.info-list li strong {
+  color: #333;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+/* The Big Call to Action Button */
+.details-action-center {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #f0f4f1;
+  padding-top: 40px;
+}
+
+.btn-fetchback {
+  background-color: #5d9981;
+  color: white;
+  border: none;
+  padding: 18px 50px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(93, 153, 129, 0.25);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-fetchback:hover {
+  transform: translateY(-5px) scale(1.02);
+  background-color: #69a88f;
+  box-shadow: 0 15px 25px rgba(93, 153, 129, 0.35), 0 6px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn-fetchback:active {
+  transform: translateY(2px);
+  box-shadow: 0 4px 8px rgba(93, 153, 129, 0.3);
+}
+
+/* THE DIMMED BACKGROUND */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dims the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* THE BOX ITSELF */
+.location-modal {
+  background-color: #e9e9e9; /* Light grey from your wireframe */
+  width: 90%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 28px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.modal-map-container {
+  background-color: white;
+  height: 250px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.map-placeholder {
+  color: #888;
+  font-size: 14px;
+}
+
+.modal-info {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn-directions-popup {
+  background-color: #93bc9b; /* Muted green from screenshot */
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn-directions-popup:hover {
+  transform: scale(1.05);
+  background-color: #7fa887;
+}
+
+.modal-footer-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}

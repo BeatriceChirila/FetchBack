@@ -1,0 +1,77 @@
+.delete-page-wrapper 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.delete-card 
+{
+  background: white;
+  border: 1px solid #feebee;
+  border-radius: 20px; 
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(229, 115, 115, 0.15);
+  max-width: 500px;
+  width: 100%;
+  animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.warning-icon {
+  margin-bottom: 20px;
+}
+
+.text-red {
+  color: #e57373;
+  margin-bottom: 10px;
+}
+
+.delete-subtitle {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.delete-warning {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.delete-actions {
+  justify-content: center;
+  margin-top: 0;
+}
+
+.btn-delete-confirm 
+{
+  padding: 14px 40px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background-color: #e57373;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 8px 15px rgba(229, 115, 115, 0.3);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.btn-delete-confirm:hover {
+  transform: translateY(-3px) scale(1.02);
+  background-color: #ef5350;
+  box-shadow: 0 10px 20px rgba(229, 115, 115, 0.4), 0 6px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn-delete-confirm:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 8px rgba(229, 115, 115, 0.3);
+}

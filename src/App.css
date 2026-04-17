@@ -1,0 +1,49 @@
+/* --- App.css --- */
+.app-container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  font-family: sans-serif;
+  color: #333;
+}
+
+/* 1. TOP NAVIGATION BAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.brand-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.brand-section img 
+{
+  display: block;
+  flex-shrink: 0;
+}
+
+
+.brand-text {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.text-black { color: black; }
+.text-green { color: #5d9981; }
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.nav-item { cursor: pointer; }
+.nav-item-bold { font-weight: bold; cursor: pointer; }
